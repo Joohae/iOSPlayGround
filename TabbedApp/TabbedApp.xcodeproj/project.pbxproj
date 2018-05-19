@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24040A0F20AFA7A700BE59E8 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 24040A0E20AFA7A700BE59E8 /* config.json */; };
 		24CEC5F120A61DD1006DFC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CEC5F020A61DD1006DFC8C /* AppDelegate.swift */; };
 		24CEC5F320A61DD1006DFC8C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CEC5F220A61DD1006DFC8C /* FirstViewController.swift */; };
 		24CEC5F520A61DD1006DFC8C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CEC5F420A61DD1006DFC8C /* SecondViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24040A0E20AFA7A700BE59E8 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		24CEC5ED20A61DD1006DFC8C /* TabbedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CEC5F020A61DD1006DFC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24CEC5F220A61DD1006DFC8C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24040A0D20AFA77400BE59E8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				24040A0E20AFA7A700BE59E8 /* config.json */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		24CEC5E420A61DD1006DFC8C = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		24CEC5EF20A61DD1006DFC8C /* TabbedApp */ = {
 			isa = PBXGroup;
 			children = (
+				24040A0D20AFA77400BE59E8 /* Config */,
 				24CEC5F020A61DD1006DFC8C /* AppDelegate.swift */,
 				24CEC61F20A621A1006DFC8C /* MainTabBarController.swift */,
 				24CEC5F220A61DD1006DFC8C /* FirstViewController.swift */,
@@ -150,6 +161,7 @@
 			files = (
 				24CEC5FD20A61DD2006DFC8C /* LaunchScreen.storyboard in Resources */,
 				24CEC62520A65CC2006DFC8C /* Components.storyboard in Resources */,
+				24040A0F20AFA7A700BE59E8 /* config.json in Resources */,
 				24CEC5FA20A61DD2006DFC8C /* Assets.xcassets in Resources */,
 				24CEC5F820A61DD1006DFC8C /* Main.storyboard in Resources */,
 			);
@@ -315,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8B7TS6GQC4;
 				INFOPLIST_FILE = TabbedApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8B7TS6GQC4;
 				INFOPLIST_FILE = TabbedApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

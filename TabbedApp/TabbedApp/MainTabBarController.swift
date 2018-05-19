@@ -17,6 +17,16 @@ class MainTabBarController: UITabBarController {
         self.viewControllers?.append(self.storyboard!.instantiateViewController(withIdentifier: "IDSecondViewController"))
         self.viewControllers?.append(self.storyboard!.instantiateViewController(withIdentifier: "IDThirdViewController"))
 
+        let str = Bundle.main.url(forResource: "config", withExtension: "json")
+        do
+        {
+            let text2 = try String(contentsOf: str!, encoding: .utf8)
+            let data = text2.data(using: String.Encoding.utf8)
+            let json = try? JSONSerialization.jsonObject(with: data!, options: [])
+            let dict = json as? [String: Any]
+            NSLog("%@ %@", text2, dict!["FirstKey"] as! String)
+        }
+        catch {/* error handling here */}
         // Do any additional setup after loading the view.
     }
     
